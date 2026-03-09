@@ -18,7 +18,7 @@ I, ¡ojo!, run on a XIAO esp32c3 microcontroller which can be programmed to do w
 
 
 
-\## Getting things ready
+## Getting things ready
 
 
 
@@ -34,11 +34,11 @@ Once my board can be found we can install my controller in the Board manager. Se
 
 Or follow the official setup guide below
 
-https:wiki.seeedstudio.comXIAO\_ESP32C3\_Getting\_Started 
+https:wiki.seeedstudio.comXIAO_ESP32C3_Getting_Started 
 
 
 
-\*\*Be carefull my code wont work with the newest version, so we install version 2.0.17\*\*
+**Be carefull my code wont work with the newest version, so we install version 2.0.17**
 
 
 
@@ -52,7 +52,7 @@ After this install i am ready to perform my first show!
 
 
 
-\## Using the code
+## Using the code
 
 You only need to work in the .ino file. Which is the main program that uses everything else. Here we have 2 basic blocks of code. The setup() is run at the startup of the controller and can be used once. The loop() will be repeated until you turn me off.
 
@@ -66,11 +66,11 @@ The CumstomAnimations() function has a state switch. This makes it possible to g
 
 
 
-\## Eye functions
+## Eye functions
 
-Most function to program my moves have multiple variants. So you can customize the animation a little bit. You can replace the values inside the brackets \*\*\*(...)\*\*\* to change the values of the function.
+Most function to program my moves have multiple variants. So you can customize the animation a little bit. You can replace the values inside the brackets ***(...)*** to change the values of the function.
 
-\### eye.moveEye(...)
+### eye.moveEye(...)
 
 moveEye moves my eyeball left or right to the value that is given. 
 
@@ -98,7 +98,7 @@ eye.moveEye(side, time){
 
 | 0| 500 | 1000|
 
-\### eye.openEye(...)
+### eye.openEye(...)
 
 openEye opens my eyelids to the value that is given. 
 
@@ -126,9 +126,9 @@ eye.openEye(spread, time){
 
 | 0| 500 | 1000|
 
-\### eye.setEye(...)
+### eye.setEye(...)
 
-setEye moves my eyeball left or right \*\*and\*\* opens my eyelids to the values that are given. 
+setEye moves my eyeball left or right **and** opens my eyelids to the values that are given. 
 
 ```
 
