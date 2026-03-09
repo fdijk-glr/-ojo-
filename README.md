@@ -1,6 +1,6 @@
 
 
-\# ¡ojo!
+# ¡ojo!
 
 
 
@@ -10,7 +10,7 @@ Hi! I'm ¡ojo!, your animatronic companion.
 
 
 
-\# Programming guide
+# Programming guide
 
 
 
@@ -26,7 +26,7 @@ First we need to install the Arduino IDE and setup the board manager. To be able
 
 ```
 
-https://jihulab.com/esp-mirror/espressif/arduino-esp32.git
+https:jihulab.comesp-mirrorespressifarduino-esp32.git
 
 ```
 
@@ -34,7 +34,7 @@ Once my board can be found we can install my controller in the Board manager. Se
 
 Or follow the official setup guide below
 
-https://wiki.seeedstudio.com/XIAO\_ESP32C3\_Getting\_Started/ 
+https:wiki.seeedstudio.comXIAO\_ESP32C3\_Getting\_Started 
 
 
 
@@ -44,7 +44,7 @@ https://wiki.seeedstudio.com/XIAO\_ESP32C3\_Getting\_Started/
 
 
 
-The code in the ojo folder is prepared to make programming my actions easier. It uses 2 libraries, one customised / included and one needs to be installed.
+The code in the ojo folder is prepared to make programming my actions easier. It uses 2 libraries, one customised  included and one needs to be installed.
 
 In the Library manager, install the Adafruit Neopixel library (latest version).
 
@@ -78,13 +78,13 @@ moveEye moves my eyeball left or right to the value that is given.
 
 eye.moveEye(side){
 
-&nbsp;	//moves at maximum speed
+&nbsp;	moves at maximum speed
 
 }
 
 eye.moveEye(side, time){
 
-&nbsp;	//moves over time in ms
+&nbsp;	moves over time in ms
 
 }
 
@@ -106,13 +106,13 @@ openEye opens my eyelids to the value that is given.
 
 eye.openEye(spread){
 
-&nbsp;	//opens at maximum speed
+&nbsp;	opens at maximum speed
 
 }
 
 eye.openEye(spread, time){
 
-&nbsp;	//opens over time in ms
+&nbsp;	opens over time in ms
 
 }
 
@@ -134,13 +134,13 @@ setEye moves my eyeball left or right \*\*and\*\* opens my eyelids to the values
 
 eye.setEye(side){
 
-&nbsp;	//moves and opens at maximum speed
+&nbsp;	moves and opens at maximum speed
 
 }
 
 eye.setEye(side, time){
 
-&nbsp;	//moves and opens over time in ms
+&nbsp;	moves and opens over time in ms
 
 }
 
