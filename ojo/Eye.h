@@ -12,10 +12,10 @@ class Eye{
   void setPixel(int h, int s, int v);   
   void moveEye(int side);
   void moveEye(int side, int time);
-  void openEye(int deg);
-  void openEye(int deg, int time);
-  void setEye(int side, int deg);
-  void setEye(int side, int deg, int time);
+  void openEye(int spread);
+  void openEye(int spread, int time);
+  void setEye(int side, int spread);
+  void setEye(int side, int spread, int time);
   void reset();   
   void motorsOn();
   void motorsOff();

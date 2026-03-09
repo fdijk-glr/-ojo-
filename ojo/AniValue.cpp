@@ -1,24 +1,17 @@
 #include "AniValue.h"
 #include <stdint.h>
 
-AniValue::AniValue(int min, int max, int cur) {
+AniValue::AniValue(int min, int max, int cur, int step_value, int mode) {
   _init_cur = cur;
   _cur = cur;
   _min = min;
   _max = max;
-  if (_cur < _min) {
-    _min = _cur;
-  } 
-  if (_cur > _max) {
-    _max = _cur;
-  }
-}
-AniValue::AniValue(int min, int max, int cur, int step_value) {
-  _init_cur = cur;
-  _cur = cur;
-  _min = min;
-  _max = max;
+  if(step_value > 1){
   _step_value = step_value;
+  }
+  if(mode == 2){
+    _add = -min;
+  }
   if (_cur < _min) {
     _min = _cur;
   } 
@@ -142,7 +135,7 @@ int AniValue::clamp() {
   } else if (_cur > _max) {
     _cur = _max;
   }
-  return _cur;
+  return _cur - _add;
 }
 void AniValue::reset(){
   _mode = IDLE;

@@ -3,11 +3,11 @@
 
 Eye::Eye(int x_pin, int y_pin, int btn_pin)
   : led(1, 7, NEO_GRBW + NEO_KHZ800),
-    _h(0, 65535, 2000, 10),
-    _s(0, 255, 254),
-    _v(0, 255, 127),
-    _x_angle(1000, 2000, 1000),
-    _y_angle(1000, 2000, 1000) {
+    _h(0, 65535, 2000, 10, 1),
+    _s(0, 255, 254, 0, 0),
+    _v(0, 255, 127, 0 ,0),
+    _x_angle(1000, 2000, 1000, 0, 2),
+    _y_angle(1000, 2000, 1000, 0, 2) {
   _x_pin = x_pin;
   _y_pin = y_pin;
   _btn = btn_pin;
@@ -72,20 +72,20 @@ void Eye::moveEye(int side, int time) {
   _x_angle.setLinear(side, time);
 }
 
-void Eye::openEye(int deg) {
-  _y_angle.setValue(deg);
+void Eye::openEye(int spread) {
+  _y_angle.setValue(spread);
 }
-void Eye::openEye(int deg, int time) {
-  _y_angle.setLinear(deg, time);
+void Eye::openEye(int spread, int time) {
+  _y_angle.setLinear(spread, time);
 }
 
-void Eye::setEye(int side, int deg) {
+void Eye::setEye(int side, int spread) {
   _x_angle.setValue(side);
-  _y_angle.setValue(deg);
+  _y_angle.setValue(spread);
 }
-void Eye::setEye(int side, int deg, int time) {
+void Eye::setEye(int side, int spread, int time) {
   _x_angle.setLinear(side, time);
-  _y_angle.setLinear(deg, time);
+  _y_angle.setLinear(spread, time);
 }
 
 void Eye::reset() {
