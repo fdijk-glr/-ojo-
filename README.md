@@ -34,7 +34,7 @@ Once my board can be found we can install my controller in the Board manager. Se
 
 Or follow the official setup guide below
 
-https:wiki.seeedstudio.comXIAO_ESP32C3_Getting_Started 
+[XIAO ESP32C3 Getting started](https:wiki.seeedstudio.comXIAO_ESP32C3_Getting_Started )
 
 
 
