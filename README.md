@@ -92,11 +92,9 @@ eye.moveEye(side, time){
 
 
 
-| Left| Center | Right|
-
-| ----------- | ----------- | ----------- |
-
-| 0| 500 | 1000|
+| Left | Center | Right |
+|-----------:|-----------|-----------|
+| 0 | 500 | 1000 |
 
 ### eye.openEye(...)
 
@@ -121,9 +119,7 @@ eye.openEye(spread, time){
 
 
 | Open| Center | Closed|
-
-| ----------- | ----------- | ----------- |
-
+| -----------| ----------- | ----------- |
 | 0| 500 | 1000|
 
 ### eye.setEye(...)
@@ -132,13 +128,13 @@ setEye moves my eyeball left or right **and** opens my eyelids to the values tha
 
 ```
 
-eye.setEye(side){
+eye.setEye(side, spread){
 
 &nbsp;	moves and opens at maximum speed
 
 }
 
-eye.setEye(side, time){
+eye.setEye(side, spread, time){
 
 &nbsp;	moves and opens over time in ms
 
@@ -148,19 +144,15 @@ eye.setEye(side, time){
 
 
 
-| Left| Center | Right|
-
-| ----------- | ----------- | ----------- |
-
-| 0| 500 | 1000|
+| Left| Center | Right|| Open| Center | Closed|
+| ----------- | ----------- | ----------- | - | ----------- | ----------- | ----------- |
+| 0| 500 | 1000|| 0| 500 | 1000|
 
 
 
-| Open| Center | Closed|
 
-| ----------- | ----------- | ----------- |
 
-| 0| 500 | 1000|
+
 
 
 
