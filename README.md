@@ -1,10 +1,6 @@
 
 
-# ¡ojo!
-
-
-
-Hi! I'm ¡ojo!, your animatronic companion. 
+# Hi! I'm ¡ojo!, your animatronic companion. 
 
 
 
