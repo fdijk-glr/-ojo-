@@ -41,7 +41,7 @@ void CustomAnimations() {
   switch (state) {
     case 0:
       eye._v.setLinear(254, 600);
-      eye.setEye(500, 0, 600);
+      eye.setEye(500, 500, 600);
       wait = 1000;
       state++;
       break;
@@ -49,6 +49,7 @@ void CustomAnimations() {
       eye._h.setPulse(300);
       eye._x_angle.setPulse(0, 1000, 2000);
       wait = 10000;
+
       state++;
       break;
     case 2:

@@ -3,11 +3,11 @@
 
 Eye::Eye(int x_pin, int y_pin, int btn_pin)
   : led(1, 7, NEO_GRBW + NEO_KHZ800),
-    _h(0, 65535, 2000, 10, 1),
-    _s(0, 255, 254, 0, 0),
-    _v(0, 255, 127, 0 ,0),
-    _x_angle(1000, 2000, 1000, 0, 2),
-    _y_angle(1000, 2000, 1000, 0, 2) {
+    _h(0, 65535, 2000, 10),
+    _s(0, 255, 254),
+    _v(0, 255, 127),
+    _x_angle(0, 1000, 500, 2, 1000),
+    _y_angle(0, 1000, 1000, 2, 1000) {
   _x_pin = x_pin;
   _y_pin = y_pin;
   _btn = btn_pin;
@@ -56,7 +56,12 @@ void Eye::animate() {
   // Serial.println(br);
   setPixel(_h.getValue(), _s.getValue(), _v.getValue());
   // led.show();
-
+  if(_btn_wait){
+    _btn_pressed = button();
+    if(_btn_pressed){
+      _btn_wait = false;
+    }
+  }
   // Serial.println("anim");
 }
 

@@ -9,7 +9,9 @@
 
 class AniValue{
   public:
-  AniValue(int min, int max, int cur, int step_value, int mode);
+  AniValue(int min, int max, int cur);
+  AniValue(int min, int max, int cur, int step_value);
+  AniValue(int min, int max, int cur, int mode, int value);
   int getValue();
   void addValue(int v);
   void setValue(int v);

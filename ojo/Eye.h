@@ -28,6 +28,8 @@ class Eye{
   void setReady();
   bool _ready = 0;
   int _btn;
+  bool _btn_wait = false;
+  bool _btn_pressed;
   int _x_pin;
   int _y_pin;
   Servo x_axis;
