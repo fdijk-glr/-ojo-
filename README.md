@@ -22,7 +22,7 @@ First we need to install the Arduino IDE and setup the board manager. To be able
 
 ```
 
-[https:jihulab.comesp-mirrorespressifarduino-esp32.git
+[https://jihulab.com/esp-mirror/espressif/arduino-esp32.git
 ](https://jihulab.com/esp-mirror/espressif/arduino-esp32.git)
 ```
 
