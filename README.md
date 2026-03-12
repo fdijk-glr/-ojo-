@@ -21,16 +21,14 @@ I, ¡ojo!, run on a XIAO esp32c3 microcontroller which can be programmed to do w
 First we need to install the Arduino IDE and setup the board manager. To be able to find the board we need to add the following link to the Additional board URLs in the preferences.
 
 ```
-
-[https://jihulab.com/esp-mirror/espressif/arduino-esp32.git
-](https://jihulab.com/esp-mirror/espressif/arduino-esp32.git)
+https://jihulab.com/esp-mirror/espressif/arduino-esp32.git
 ```
 
 Once my board can be found we can install my controller in the Board manager. Search for esp32 by Expressif systems. 
 
 Or follow the official setup guide below
 
-[XIAO ESP32C3 Getting started](https:wiki.seeedstudio.comXIAO_ESP32C3_Getting_Started )
+[XIAO ESP32C3 Getting started](https://wiki.seeedstudio.com/XIAO_ESP32C3_Getting_Started )
 
 
 
